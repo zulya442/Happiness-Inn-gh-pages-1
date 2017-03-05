@@ -1,0 +1,142 @@
+body{
+	margin: 0;	
+}
+.logo{
+	width: 65%;
+	height: auto;
+	margin: 0 auto;
+	padding: 1em;
+}
+#about{
+	width:100%;
+/*	border:2px red solid;*/
+	/*margin-top: 18em;*/
+}
+#order{
+	width:100%;
+	margin-top: 66em;
+}
+#calendar{
+	width: 100%;
+	margin-top: 175em;
+	border:2px red;
+}
+#donate{
+	width: 100%;
+	margin-top: 271em;
+}
+#contact{
+	width: 100%;
+	margin-top: 314em;
+/*	border:2px red solid;*/
+}
+/* Navigation
+------------------------------------------*/
+
+nav ul {
+	padding: 1em 0 1em 0em;
+	list-style:none;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-around;
+	font-family: 'Seravek';
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+nav ul li {
+	/*margin-right: 2.2em;*/	
+}
+
+nav ul li a {
+	padding: .5em 5em;
+	display: block;
+	text-align: center;
+	width: 100%;
+	border-radius: 15px;
+	transition: all 1s ease-in-out;
+	text-decoration: none;
+	color: black;
+}
+
+nav ul li a:hover {
+	background: black;
+	color: white;
+	text-decoration: none;
+}
+/* Layout
+------------------------------------------*/
+section{
+	padding-top:.2em;
+}
+header,
+.container,
+footer {
+	margin: 0 auto;
+	width:88%;
+	max-width: 960px;
+	/*background-repeat: no-repeat;
+	background-size: 100%;
+	min-width: 100%;
+	height: 5568px;
+*/}
+
+.wrapper {
+	padding: 1em 0 1em 2em;
+	background-image:url(../img/content.jpg); 
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	height: 5549px;
+	width: 100%;
+	/*height: 4050px;
+	margin: 0 auto;*/
+	/*margin-right: 10em;
+	margin-left: 10em;*/
+
+}
+/*Media Queries
+---------------------------------------*/
+
+@media screen and (min-width: 600px) {
+
+	h1{
+		font-size: 30px;
+	}
+
+	nav ul {
+	flex-direction:row;
+	margin: 0 auto;
+	}
+
+	nav ul li a{
+	padding: .5em 1em;	
+	}
+}
+	
+
+@media screen and (max-width: 600px) {
+
+.wrapper{
+		background-image:url(../img/iphone-version.jpg);
+		/*padding: 0 !important;*/
+		background-size: cover;
+		background-position:center;
+		height: 2815px;
+	}
+.container{
+		display: none;
+}
+
+nav ul li{
+	display: none;
+}
+nav{
+	display: none !important;
+}
+}
+
